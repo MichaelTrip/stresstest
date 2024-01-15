@@ -15,10 +15,10 @@ spec:
       containers:
       - name: stresstest
         image: ghcr.io/michaeltrip/stresstest:latest
-        resources:
-          limits:
-            cpu: "500m"
-            memory: "256Mi"
-          requests:
-            cpu: "250m"
-            memory: "100Mi"
+        resources: {}
+          # limits:
+          #   cpu: "500m"
+          #   memory: "256Mi"
+          # requests:
+          #   cpu: "250m"
+          #   memory: "100Mi"

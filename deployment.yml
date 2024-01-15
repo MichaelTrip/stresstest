@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: stresstest
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      app: stresstest
   template:
     metadata:
       labels:
-        app: myapp
+        app: stresstest
     spec:
       containers:
-      - name: myapp
-        image: gcr.io/myproject/myimage:latest
+      - name: stresstest
+        image: docker pull ghcr.io/michaeltrip/stresstest:latest
         resources:
           limits:
             cpu: "500m"

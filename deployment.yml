@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: stresstest
-        image: docker pull ghcr.io/michaeltrip/stresstest:latest
+        image: ghcr.io/michaeltrip/stresstest:latest
         resources:
           limits:
             cpu: "500m"
